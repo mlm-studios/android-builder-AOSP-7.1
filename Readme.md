@@ -9,7 +9,7 @@ Any other jack errors (where it isnt able to use the server) could be regarding 
 
 Building dockerimage can be done by running `make` 
 
-Running it: 
+Running it with a folder from your host system: 
 ```
 sudo docker run --rm -it -v ~/workdir:/home/builder/android/workdir mlm-games/aosp_7.1
 ```

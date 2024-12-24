@@ -2,9 +2,9 @@ name: Docker Build and Test
 
 on:
   push:
-    branches: [ main, master ]
+    branches: '**'
   pull_request:
-    branches: [ main, master ]
+    branches: '**'
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
     - name: Test Docker image
       run: |
         mkdir -p test_workdir
-        docker run --rm -v ${{ github.workspace }}/test_workdir:/home/builder/android/workdir mlm-games/aosp_7.1 echo "Container test successful"
+        docker run --rm -v ${{ github.workspace }}/test_workdir:/home/builder/android/workdir mlmgames/aosp_7.1 echo "Container test successful"
 
     - name: Login to Docker Hub
       if: github.event_name != 'pull_request'

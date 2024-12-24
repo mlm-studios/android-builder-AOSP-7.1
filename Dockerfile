@@ -51,6 +51,8 @@ RUN apt-get update && apt-get install -y \
     screen \
     imagemagick \
     lsof \
+    python3 \
+    python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

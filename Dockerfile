@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER mlm <email@noreply.com>
+MAINTAINER mlmgames <email@noreply.com>
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive

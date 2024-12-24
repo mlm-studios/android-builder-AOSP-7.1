@@ -53,6 +53,7 @@ RUN apt-get update && apt-get install -y \
     lsof \
     python3 \
     python3-pip \
+    locales \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

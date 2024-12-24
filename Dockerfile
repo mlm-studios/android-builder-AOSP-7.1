@@ -7,9 +7,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Set locale
 RUN apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
+ENV LANG C
 ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
+ENV LC_ALL C
 
 # Install required packages
 RUN apt-get update && apt-get install -y \

@@ -36,4 +36,4 @@ jobs:
     - name: Push to Docker Hub
       if: github.event_name != 'pull_request'
       run: |
-        docker push mlm-games/aosp_7.1
+        docker push mlmgames/aosp_7.1

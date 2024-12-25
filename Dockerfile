@@ -57,6 +57,9 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Modify the java.security file to remove TLSv1 and TLSv1.1 from disabled algorithms
+RUN sed -i '/jdk.tls.disabledAlgorithms/ s/TLSv1, TLSv1.1, //' /etc/java-8-openjdk/security/java.security
+
 # Install repo tool
 RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo \
     && chmod a+x /usr/local/bin/repo

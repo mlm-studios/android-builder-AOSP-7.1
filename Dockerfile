@@ -87,5 +87,3 @@ ENV CCACHE_DIR=/home/builder/.ccache
 ENV PATH=/usr/lib/ccache:$PATH
 ENV ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 ENV USER=builder
-
-# should keep restarting jack server everytime it fails?
